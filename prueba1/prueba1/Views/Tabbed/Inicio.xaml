@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="prueba1.Views.Tabbed.Inicio">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3"  CornerRadius="0" Margin="0,0,0,0">
+                <Label Text="Ubicación Actual del transporte"
+                       FontSize="20"
+                      TextColor="White"/>
+            </Frame>
+            <maps:Map x:Name="MyMap"/>
+
+                <StackLayout Padding="20" Margin="0,0,10,0">
+                <Grid>
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="Nombre del conductor: "
+                        FontSize="16"
+                        TextColor="Black"/>
+                    <Label x:Name="n1"
+                           Grid.Column="1"
+                           Grid.Row="0"
+                           FontSize="16"
+                           TextColor="Black"/>
+                    <Label Text="Patente:"
+                           FontSize="16"
+                           TextColor="Black"
+                           Grid.Row="1"
+                           Grid.Column="0"/>
+                    <Label x:Name="PatenteTxt"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           FontSize="16"
+                           TextColor="Black"/>
+                    <Label Text="Numero de Contacto: "
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           FontSize="16"
+                           TextColor="Black"/>
+                    <Label x:Name="LabelContacto"
+                           FontSize="16"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           TextColor="Black"/>
+                </Grid>                
+
+                
+               
+                <Label x:Name="patenteid"
+                       IsVisible="false"
+                       Text="{Binding VehiculoId}"/>
+
+
+            </StackLayout>            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

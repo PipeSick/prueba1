@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prueba1.Views.Tabbed.Establecimiento">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="TxtNombre" TextColor="Red" FontSize="26" HorizontalOptions="Center" Margin="0,50,0,0"></Label>
+            <Grid>
+                <Label Text="Director: " FontSize="20" Grid.Column="0" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Label x:Name="TxtDirector" FontSize="20" Grid.Column="1" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Label Text="Contacto:  " FontSize="20" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Label x:Name="TxtContacto" FontSize="20" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Label Text="Dirección  " FontSize="20" Grid.Column="0" Grid.Row="2" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Label x:Name="TxtDireccion" FontSize="20" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:prueba1"
+             x:Class="prueba1.Views.AgregarUsuario">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStak">
+            <StackLayout Padding="20" Margin="0,80,0,0" >
+                <Label Text="Registro" TextColor="Black" HorizontalTextAlignment="Start" FontSize="Title"></Label>
+            </StackLayout>
+            <StackLayout Padding="20" Margin="0, 20, 0, 0">
+                <Label Text="Correo" TextColor="Red"></Label>
+                <Entry Placeholder="Ingrese Correo"
+                       Text="{Binding EmailTxt, Mode = TwoWay}"
+                       />
+                <Grid Margin="0,15,0,0">
+                    <Label Text="Contraseña"  TextColor="Red">
+                    </Label>
+                    <Entry Placeholder="Ingrese Contraseña" Margin="0,20,0,0"
+                           Text="{Binding PasswordTxt, Mode= TwoWay}" 
+                           IsPassword="True"
+                           />
+  
+                </Grid>
+
+                <Button Text="Agregar"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        Command="{Binding RegisterCommand}"
+                        Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

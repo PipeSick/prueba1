@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prueba1.Views.Tabbed.Perfil">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Perfil de Usuario" TextColor="Red" FontSize="26" HorizontalOptions="Center" Margin="0,50,0,0"></Label>
+            <Grid>
+                <Label Text="Datos del usuario" FontSize="20" Grid.Column="0" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+                <Label Text="Datos del Alumno" FontSize="20" Grid.Column="1" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+
+            </Grid>
+            <Grid>
+                <Label Text="Nombre: " Grid.Column="0" Grid.Row="0" Margin="0,20,0,0" FontSize="18"/>
+                <Label x:Name="TxtNombre" Grid.Column="1" Grid.Row="0" Margin="0,20,0,0" FontSize="18"/>
+                <Label Text="Nombre Alumno: " Grid.Column="2" Grid.Row="0" Margin="0,20,0,0" FontSize="18"/>
+                <Label x:Name="TxtAlumnoNombre" Grid.Column="3" Grid.Row="0" Margin="0,20,0,0" FontSize="18"/>
+                <Label Text="Apellido: " Grid.Column="0" Grid.Row="1" Margin="0,20,0,0" FontSize="18"/>
+                <Label x:Name="TxtApellido" Grid.Column="1" Grid.Row="1" Margin="0,20,0,0" FontSize="18"/>
+                <Label Text="Apellido Alumno: " Grid.Column="2" Grid.Row="1" Margin="0,20,0,0" FontSize="18" />
+                <Label x:Name="TxtAlumnoApellido" Grid.Column="3" Grid.Row="1" Margin="0,20,0,0" FontSize="18" />
+                <Label Text="Correo: " Grid.Column="0" Grid.Row="2" Margin="0,20,0,0" FontSize="18" />
+                <Label x:Name="TxtCorreo" Grid.Column="1" Grid.Row="2" Margin="0,20,0,0" FontSize="18" />
+                <Label Text="Rut Alumno: " Grid.Column="2" Grid.Row="3" Margin="0,20,0,0" FontSize="18" />
+                <Label x:Name="TxtRut" Grid.Column="3" Grid.Row="3" Margin="0,20,0,0" FontSize="18" />
+                <Label Text="Nombre Establecimiento: " Grid.Column="2" Grid.Row="2" Margin="0,20,0,0" FontSize="18"/>
+                <Label x:Name="TxtEstablecimiento" Grid.Column="3" Grid.Row="2" Margin="0,20,0,0" FontSize="18"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:locals="clr-namespace:prueba1.Views.Tabbed"
+             x:Class="prueba1.Views.Tabbed.ContainerTabbedPage">
+
+    <locals:Inicio Title="Inicio" IconImageSource="icon_home" BindingContext="{Binding inicioViewModel}"/>
+    <locals:Establecimiento Title="Establecimiento" IconImageSource="icon_establecimiento" />
+    <locals:Perfil Title="Perfil" IconImageSource="Icon_perfil"/>
+</TabbedPage>
